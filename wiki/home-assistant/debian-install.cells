@@ -84,6 +84,14 @@ Assistant работает исключительно плохо.
 
     curl -Lo installer.sh https://raw.githubusercontent.com/home-assistant/supervised-installer/master/installer.sh
 
+
+Еще нужно выполнить команду:
+    export PATH=$PATH:/usr/sbin
+иначе при установке будет выдана ошибка [error] missing: apparmor
+
+
+
+
 А дальше нужно запустить этот файл:
 
     bash installer.sh
